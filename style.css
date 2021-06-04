@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+html{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+
+/* navbar */
+
+/* hero */
+
+.hero{
+    display: grid;
+    place-items: center;
+    margin: 4rem 0;
+}
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.hero p{
+    text-align: center;
+    max-width: 55ch;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+
+/* hero */
+
+
+/* grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-image: url(images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.card h2{
+    font-size: 4.3rem;
+    margin: 0;
+}
+.card p{
+    text-align: center;
+    margin-top: 0;
+    color: hsl(211, 13%, 63%);
+    margin-bottom: 18.75rem;
+}
+
+/* grid */
+
+/* showcase's */
+
+.showcase-1{
+    background-color: hsl(207, 100%, 98%);
+    transform: translateY(-3%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    padding: 3rem;
+}
+.showcase-1 .right img{
+    width: 80%;
+    
+}
+.showcase-1 .left p{
+    width: 57ch;
+    margin-top: 0;
+}
+
+/* showcase-2 */
+.showcase-2{
+    padding: 5rem;
+    padding-top: 18.5rem;
+    padding-bottom: 18.5rem;
+    background-image: url(images/bg-section-bottom-desktop-1.svg),url(images/bg-section-top-desktop-2.svg);
+    background-repeat: no-repeat ,no-repeat;
+    background-position: center top, center bottom;
+    transform: translateY(-3%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    
+}
+.showcase-2 .left img{
+    width: 90%;
+}
+.showcase-2 .right {
+    padding: 0 2rem;
+}
+
+/* showcase 3 */
+
+.showcase-3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items:center ;
+    background-color: hsl(207, 100%, 98%);
+    transform: translateY(-9%);
+    padding: 3rem 1rem;
+}
+.showcase-3 .right img{
+    width: 90%;
+}
+.showcase-3 .left{
+    padding: 0 4rem;
+}
+.showcase-3 .left p{
+    width: 55ch;
+    margin-top: 0;
+}
+
+/* showcase's */
+
+/* community */
+
+.community{
+    background-image: url(images/bg-section-bottom-desktop-2.svg), url(images/bg-footer-top-desktop.svg);
+    background-position: center top, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+    padding-top: 10rem;
+    transform: translateY(-9%);
+    padding-bottom: 18.5rem;
+}
+
+
+/* community */
+
+/* footer */
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    transform: translateY(-11%);
+    color: white;
+}
+
+/* footer */
+
+/* utilities */
+
+.btn{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    border-radius: 1.3rem;
+}
+.header-btn{
+    background-color: transparent;
+    height: 2.2rem;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    padding: 0.3rem 1.8rem;
+}
+.hero .btn, .community .btn{
+    text-align: center;
+    width: 25%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+}
+.community .btn{  
+    padding: 1.3rem 2rem;
+}
