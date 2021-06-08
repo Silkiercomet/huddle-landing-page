@@ -64,6 +64,7 @@ h1 {
   background-image: url(images/bg-section-top-desktop-1.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: 100%;
 }
 
 .card h2 {
@@ -107,6 +108,7 @@ h1 {
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
   transform: translateY(-3%);
+  background-size: 100%,100%;
   display: grid;
   grid-template-columns: 50% 50%;
   place-items: center;
@@ -144,11 +146,10 @@ h1 {
 /* community */
 
 .community {
-  background-image: url(images/bg-section-bottom-desktop-2.svg),
-    url(images/bg-footer-top-desktop.svg);
+  background-image: url(images/bg-section-bottom-desktop-2.svg), url(images/bg-footer-top-desktop.svg);
   background-position: center top, center bottom;
+  background-size: 100%;
   background-repeat: no-repeat, no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,4 +456,12 @@ footer .right p {
   .green {
     transform: translateY(-100%);
   }
+@media (min-width:1500px){
+  .navbar{
+    align-items: center;
+  }
+  img{
+    max-width: 800px;
+  }
+}
 }
